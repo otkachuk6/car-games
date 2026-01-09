@@ -1,0 +1,50 @@
+[
+    {
+        "id": "racing",
+        "name": "Racing",
+        "icon": "fas fa-flag-checkered",
+        "count": "150+"
+    },
+    {
+        "id": "drifting",
+        "name": "Drifting",
+        "icon": "fas fa-tachometer-alt",
+        "count": "85+"
+    },
+    {
+        "id": "parking",
+        "name": "Parking",
+        "icon": "fas fa-parking",
+        "count": "60+"
+    },
+    {
+        "id": "monster-truck",
+        "name": "Monster Truck",
+        "icon": "fas fa-truck-monster",
+        "count": "45+"
+    },
+    {
+        "id": "offroad",
+        "name": "Offroad",
+        "icon": "fas fa-mountain",
+        "count": "40+"
+    },
+    {
+        "id": "simulation",
+        "name": "Simulation",
+        "icon": "fas fa-steering-wheel",
+        "count": "70+"
+    },
+    {
+        "id": "arcade",
+        "name": "Arcade",
+        "icon": "fas fa-gamepad",
+        "count": "100+"
+    },
+    {
+        "id": "multiplayer",
+        "name": "Multiplayer",
+        "icon": "fas fa-users",
+        "count": "30+"
+    }
+]

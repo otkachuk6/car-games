@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "title": "Extreme Drift Racing",
+        "category": "Drifting",
+        "description": "Master the art of drifting in this high-octane racing game. Customize your car and hit the tracks!",
+        "rating": 4.8,
+        "plays": 45200,
+        "image": "https://images.unsplash.com/photo-1547754980-3df97fed72a8?w=500&h=300&fit=crop",
+        "embedUrl": "https://www.addictinggames.com/embed/html5-games/23635",
+        "featured": true
+    },
+    {
+        "id": 2,
+        "title": "City Car Stunt 4",
+        "category": "Racing",
+        "description": "Perform amazing stunts in the city! Race against time and gravity in this thrilling 3D game.",
+        "rating": 4.6,
+        "plays": 32100,
+        "image": "https://images.unsplash.com/photo-1511994714008-b6d68a8b32a2?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/f8045a5713494ac88e025ec3c4314c62/",
+        "featured": false
+    },
+    {
+        "id": 3,
+        "title": "Parking Fury 3D",
+        "category": "Parking",
+        "description": "Test your parking skills in complex 3D environments. Don't scratch the paint!",
+        "rating": 4.5,
+        "plays": 28900,
+        "image": "https://images.unsplash.com/photo-1506469717960-433cebe3f07d?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/5d75752697a840e698822003c2317614/",
+        "featured": false
+    },
+    {
+        "id": 4,
+        "title": "Monster Truck Destroyer",
+        "category": "Monster Truck",
+        "description": "Crush everything in your path with massive monster trucks. total destruction awaits!",
+        "rating": 4.7,
+        "plays": 56000,
+        "image": "https://images.unsplash.com/photo-1621360841013-c768371e93cf?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/835427d2d3cb41b1836a9924de137684/",
+        "featured": true
+    },
+    {
+        "id": 5,
+        "title": "Highway Racer 3D",
+        "category": "Racing",
+        "description": "Speed down the highway, dodging traffic and escaping the police.",
+        "rating": 4.4,
+        "plays": 89000,
+        "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/9796010536414705ba86343588961726/",
+        "featured": false
+    },
+    {
+        "id": 6,
+        "title": "Drift Hunters",
+        "category": "Drifting",
+        "description": "The ultimate free-to-play drifting simulator. Tune your car and drift for points.",
+        "rating": 4.9,
+        "plays": 150000,
+        "image": "https://images.unsplash.com/photo-1626245353841-3af1bd0e4caf?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/6241a7d65691452994c979d375357288/",
+        "featured": true
+    },
+    {
+        "id": 7,
+        "title": "Madalin Stunt Cars 2",
+        "category": "Racing",
+        "description": "Perform insane stunts with over 30 cars in an open world environment.",
+        "rating": 4.8,
+        "plays": 200000,
+        "image": "https://images.unsplash.com/photo-1580273916550-e323be2ebeed?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/c3a726615b3941af9055819777174691/",
+        "featured": true
+    },
+    {
+        "id": 8,
+        "title": "Bus Parking 3D",
+        "category": "Parking",
+        "description": "Driving a bus is hard, but parking it is even harder. Can you master the challenge?",
+        "rating": 4.2,
+        "plays": 18500,
+        "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/39a667362d2948c2b7371c26b4737233/",
+        "featured": false
+    },
+    {
+        "id": 9,
+        "title": "Offroad 4x4 Jeep",
+        "category": "Offroad",
+        "description": "Take your jeep offroad and conquer difficult terrain in this simulator.",
+        "rating": 4.5,
+        "plays": 41000,
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/4e92a10d8697479c948404543594806a/",
+        "featured": false
+    },
+    {
+        "id": 10,
+        "title": "Formula Racer 2024",
+        "category": "Racing",
+        "description": "Experience the thrill of Formula racing. Top speeds and tight corners!",
+        "rating": 4.6,
+        "plays": 67000,
+        "image": "https://images.unsplash.com/photo-1532906611030-9b63484f3ccb?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/15286595505c48b789182390f772592d/",
+        "featured": false
+    },
+    {
+        "id": 11,
+        "title": "Neon Rider",
+        "category": "Arcade",
+        "description": "A retro-futuristic arcade racer with neon visuals and synthwave soundtrack.",
+        "rating": 4.3,
+        "plays": 22000,
+        "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/59383842145b46d7a46f906411514751/",
+        "featured": false
+    },
+    {
+        "id": 12,
+        "title": "Taxi Driver Simulator",
+        "category": "Simulation",
+        "description": "Pick up passengers and drop them off at their destination. Hurry up!",
+        "rating": 4.4,
+        "plays": 35000,
+        "image": "https://images.unsplash.com/photo-1512413996525-4cd95ffc0600?w=500&h=300&fit=crop",
+        "embedUrl": "https://html5.gamedistribution.com/c64703a15264421b9247657930113f0a/",
+        "featured": false
+    }
+]
