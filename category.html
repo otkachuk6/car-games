@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Category - Car Games</title>
+    <meta name="description" content="Browse car games by category.">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Exo+2:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="loader"></div>
+            <div class="loading-text">Loading Category...</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="/">
+                        <i class="fas fa-car"></i>
+                        <span class="logo-text">Car Games</span>
+                        <span class="logo-badge">FREE</span>
+                    </a>
+                </div>
+
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search games...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/category.html?id=racing" class="nav-link"><i class="fas fa-flag-checkered"></i>
+                            Racing</a></li>
+                    <li><a href="/category.html?id=drifting" class="nav-link"><i class="fas fa-burn"></i> Drifting</a>
+                    </li>
+                    <li><a href="/category.html?id=parking" class="nav-link"><i class="fas fa-parking"></i> Parking</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Category Header -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h1 id="category-title" class="section-title">Category Name</h1>
+            </div>
+
+            <!-- Ad Top -->
+            <div class="ad-unit leaderboard mb-4" id="ad-cat-top" data-ad-slot="leaderboard-cat-top"
+                style="margin-bottom: 30px;"></div>
+
+            <div class="games-grid" id="categoryGamesGrid">
+                <!-- Games populated by JS -->
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn-load-more" id="loadMoreBtn" style="display: none;">
+                    <i class="fas fa-plus"></i> Load More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>Car Games</span>
+                    </div>
+                    <p class="footer-description">Play, compete, and enjoy!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2026 Car Games. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script src="ads.js" defer></script>
+</body>
+
+</html>

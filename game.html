@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Play Game - Car Games</title>
+    <meta name="description" content="Play the best free online car games.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Play Game - Car Games">
+    <meta property="og:type" content="website">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Exo+2:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AdSense (Add your publisher ID) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="loader"></div>
+            <div class="loading-text">Loading Game...</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="/">
+                        <i class="fas fa-car"></i>
+                        <span class="logo-text">Car Games</span>
+                        <span class="logo-badge">FREE</span>
+                    </a>
+                </div>
+
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search games...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/category.html?id=racing" class="nav-link"><i class="fas fa-flag-checkered"></i>
+                            Racing</a></li>
+                    <li><a href="/category.html?id=drifting" class="nav-link"><i class="fas fa-burn"></i> Drifting</a>
+                    </li>
+                    <li><a href="/category.html?id=parking" class="nav-link"><i class="fas fa-parking"></i> Parking</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Game Section -->
+    <section class="game-play-section section">
+        <div class="container">
+            <div class="game-layout">
+                <!-- Main Game Column -->
+                <div class="game-main-col">
+                    <!-- Ad Above Game -->
+                    <div class="ad-unit leaderboard mb-4" id="ad-game-top" data-ad-slot="leaderboard-game-top"
+                        style="margin-bottom: 20px;"></div>
+
+                    <div class="game-player-container">
+                        <div id="game-frame-container" class="game-frame-wrapper">
+                            <!-- Iframe injected here -->
+                            <div class="game-placeholder">
+                                <i class="fas fa-gamepad"></i>
+                                <p>Select a game to play</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="game-info-bar">
+                        <h1 id="game-title" class="game-page-title">Loading Game...</h1>
+                        <div class="game-actions">
+                            <button class="btn-icon" id="favorite-btn"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" id="fullscreen-btn"><i class="fas fa-expand"></i></button>
+                            <button class="btn-icon" id="share-btn"><i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="game-details">
+                        <div class="game-meta">
+                            <span class="badge" id="game-category">Category</span>
+                            <span class="rating"><i class="fas fa-star text-warning"></i> <span
+                                    id="game-rating">0.0</span></span>
+                            <span class="plays"><i class="fas fa-play"></i> <span id="game-plays">0</span> Plays</span>
+                        </div>
+                        <p id="game-description" class="game-description-text">Game description loading...</p>
+                    </div>
+
+                    <!-- Ad Below Game -->
+                    <div class="ad-unit leaderboard mt-4" id="ad-game-bottom" data-ad-slot="leaderboard-game-bottom"
+                        style="margin-top: 20px;"></div>
+                </div>
+
+                <!-- Sidebar Column -->
+                <div class="game-sidebar-col">
+                    <!-- Sidebar Ad -->
+                    <div class="ad-unit rectangle mb-4" id="ad-sidebar-1" data-ad-slot="rectangle-sidebar-1"
+                        style="margin-bottom: 20px;"></div>
+
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">Similar Games</h3>
+                        <div class="sidebar-games-list" id="relatedGames">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Second Sidebar Ad -->
+                    <div class="ad-unit skyscraper mt-4" id="ad-sidebar-2" data-ad-slot="skyscraper-sidebar-2"
+                        style="margin-top: 20px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>Car Games</span>
+                    </div>
+                    <p class="footer-description">Play, compete, and enjoy!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2026 Car Games. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script src="ads.js" defer></script>
+
+    <style>
+        /* Specific styles for game page layout */
+        .game-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 2rem;
+        }
+
+        @media (max-width: 900px) {
+            .game-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .game-frame-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            /* 16:9 Aspect Ratio */
+            background: #000;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .game-frame-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .game-info-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .game-sidebar-games-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .sidebar-game-card {
+            display: flex;
+            gap: 1rem;
+            background: var(--bg-card);
+            padding: 0.5rem;
+            border-radius: var(--radius-md);
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .sidebar-game-card:hover {
+            transform: translateX(5px);
+            background: var(--bg-tertiary);
+        }
+
+        .sidebar-game-img {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: var(--radius-sm);
+        }
+
+        .sidebar-game-info h4 {
+            font-size: 0.9rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .sidebar-game-info span {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</body>
+
+</html>

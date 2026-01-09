@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Car Games - Free Online Racing Games | Play Now!</title>
+    <meta name="description" content="Play 500+ free online car games! Racing, parking, drifting, monster trucks - no download required. Updated daily with new games.">
+    <meta name="keywords" content="car games, racing games, free online games, car racing, parking games, drifting games, monster truck games">
+    <meta name="author" content="Car Games">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Car Games - Free Online Racing Games">
+    <meta property="og:description" content="Play the best free car games online. No downloads, no registration required!">
+    <meta property="og:image" content="https://yourdomain.com/assets/images/social-preview.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Car Games - Free Online Racing Games">
+    <meta name="twitter:description" content="Play the best free car games online.">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Car Games",
+        "url": "https://yourdomain.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://yourdomain.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "description": "Free online car games collection with 500+ games",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Car Games",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yourdomain.com/assets/images/logo.png"
+            }
+        }
+    }
+    </script>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Exo+2:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    
+    <!-- AdSense (Add your publisher ID) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+    
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="loader"></div>
+            <div class="loading-text">Loading Car Games...</div>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-consent-banner">
+        <div class="cookie-content">
+            <p>🍪 We use cookies to provide a better gaming experience and show relevant ads. By using our site, you agree to our <a href="/privacy">Privacy Policy</a> and use of cookies.</p>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept">Accept All</button>
+                <button class="cookie-btn reject">Reject Non-Essential</button>
+                <button class="cookie-btn settings">Customize</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="/">
+                        <i class="fas fa-car"></i>
+                        <span class="logo-text">Car Games</span>
+                        <span class="logo-badge">FREE</span>
+                    </a>
+                </div>
+                
+                <div class="header-actions">
+                    <!-- Search -->
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search 500+ car games...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <div class="search-results"></div>
+                    </div>
+                    
+                    <!-- User Actions -->
+                    <div class="user-actions">
+                        <button class="btn-icon" id="themeToggle" title="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="btn-icon" id="favoritesBtn" title="My favorites">
+                            <i class="fas fa-heart"></i>
+                            <span class="badge">3</span>
+                        </button>
+                        <button class="btn-primary" id="playRandomBtn">
+                            <i class="fas fa-random"></i> Random Game
+                        </button>
+                    </div>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link"><i class="fas fa-gamepad"></i> Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu categories-dropdown">
+                            <div class="dropdown-grid" id="categoriesMenu">
+                                <!-- Categories loaded dynamically -->
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="/trending" class="nav-link"><i class="fas fa-fire"></i> Trending</a></li>
+                    <li><a href="/new" class="nav-link"><i class="fas fa-star"></i> New Games</a></li>
+                    <li><a href="/popular" class="nav-link"><i class="fas fa-chart-line"></i> Popular</a></li>
+                    <li><a href="/multiplayer" class="nav-link"><i class="fas fa-users"></i> Multiplayer</a></li>
+                    <li><a href="/controls" class="nav-link"><i class="fas fa-keyboard"></i> Controls Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Featured Game -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Race, Drift, & Conquer!</h1>
+                    <p class="hero-subtitle">Play the largest collection of free online car games. Updated daily!</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="totalGames">500+</span>
+                            <span class="stat-label">Games</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="dailyPlayers">10M+</span>
+                            <span class="stat-label">Daily Players</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label">Downloads</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn-hero-primary" id="playFeaturedBtn">
+                            <i class="fas fa-play-circle"></i> Play Featured Game
+                        </button>
+                        <button class="btn-hero-secondary" id="browseAllBtn">
+                            <i class="fas fa-th-large"></i> Browse All Games
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-featured">
+                    <div class="featured-game-card">
+                        <div class="featured-badge">FEATURED</div>
+                        <img src="assets/images/featured-game.jpg" alt="Featured Game" class="featured-image">
+                        <div class="featured-content">
+                            <h3 class="featured-title">Extreme Car Racing 3D</h3>
+                            <div class="featured-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7 (25K plays)</span>
+                            </div>
+                            <p class="featured-desc">High-speed racing with realistic physics and stunning graphics!</p>
+                            <button class="btn-play-now">
+                                <i class="fas fa-play"></i> Play Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Ad Banner -->
+    <section class="ad-section">
+        <div class="container">
+            <div class="ad-unit leaderboard" id="ad-leaderboard-top" data-ad-slot="leaderboard-top">
+                <!-- Ad will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Categories -->
+    <section class="quick-categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid" id="quickCategories">
+                <!-- Categories loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Games -->
+    <section class="trending-games">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-fire"></i> Trending Now
+                </h2>
+                <a href="/trending" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="games-carousel" id="trendingCarousel">
+                <!-- Trending games loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid-Page Ad -->
+    <section class="ad-section">
+        <div class="container">
+            <div class="ad-grid">
+                <div class="ad-unit rectangle" id="ad-mid-1" data-ad-slot="mid-1"></div>
+                <div class="ad-unit rectangle" id="ad-mid-2" data-ad-slot="mid-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Games -->
+    <section class="new-games">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i> Recently Added
+                </h2>
+                <div class="section-tabs">
+                    <button class="tab-btn active" data-filter="all">All</button>
+                    <button class="tab-btn" data-filter="racing">Racing</button>
+                    <button class="tab-btn" data-filter="parking">Parking</button>
+                    <button class="tab-btn" data-filter="drifting">Drifting</button>
+                </div>
+            </div>
+            <div class="games-grid" id="newGamesGrid">
+                <!-- New games loaded dynamically -->
+            </div>
+            <div class="load-more-container">
+                <button class="btn-load-more" id="loadMoreGames">
+                    <i class="fas fa-plus"></i> Load More Games
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended for You -->
+    <section class="recommended-games">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-thumbs-up"></i> Recommended For You
+            </h2>
+            <div class="games-grid" id="recommendedGames">
+                <!-- Recommended games loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter & Social -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Never Miss New Games!</h3>
+                    <p>Subscribe to get weekly updates on new car games, tips, and exclusive content.</p>
+                </div>
+                <div class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email address" class="email-input">
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                    <p class="privacy-note">By subscribing, you agree to our <a href="/privacy">Privacy Policy</a>.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link" title="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>Car Games</span>
+                    </div>
+                    <p class="footer-description">
+                        The ultimate destination for free online car games. Play, compete, and enjoy!
+                    </p>
+                    <div class="app-badges">
+                        <a href="#" class="app-badge">
+                            <i class="fab fa-google-play"></i>
+                            <span>Get it on<br><strong>Google Play</strong></span>
+                        </a>
+                        <a href="#" class="app-badge">
+                            <i class="fab fa-app-store"></i>
+                            <span>Download on<br><strong>App Store</strong></span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/trending">Trending Games</a></li>
+                        <li><a href="/new">New Games</a></li>
+                        <li><a href="/popular">Popular Games</a></li>
+                        <li><a href="/categories">All Categories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="/controls">Game Controls</a></li>
+                        <li><a href="/tips">Gaming Tips</a></li>
+                        <li><a href="/blog">Blog & News</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="/cookies">Cookie Policy</a></li>
+                        <li><a href="/dmca">DMCA</a></li>
+                        <li><a href="/advertise">Advertise With Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Partner With Us</h4>
+                    <p>Want to feature your game on Car Games?</p>
+                    <a href="/submit-game" class="btn-partner">Submit Your Game</a>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa" title="Visa"></i>
+                        <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                        <i class="fab fa-cc-paypal" title="PayPal"></i>
+                        <i class="fab fa-cc-stripe" title="Stripe"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 Car Games. All rights reserved. All games are property of their respective owners.</p>
+                    <p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+                </div>
+                
+                <div class="footer-stats">
+                    <span><i class="fas fa-gamepad"></i> 500+ Games</span>
+                    <span><i class="fas fa-users"></i> 10M+ Players</span>
+                    <span><i class="fas fa-clock"></i> Updated Daily</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <button class="fab-main" id="fabMain">
+            <i class="fas fa-plus"></i>
+        </button>
+        <div class="fab-options">
+            <button class="fab-option" title="Report Issue">
+                <i class="fas fa-flag"></i>
+            </button>
+            <button class="fab-option" title="Share Site">
+                <i class="fas fa-share-alt"></i>
+            </button>
+            <button class="fab-option" title="Back to Top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Game Quick View Modal -->
+    <div class="modal" id="gameQuickView">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="quick-view-content">
+                <!-- Loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script src="ads.js" defer></script>
+    <script src="analytics.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" defer></script>
+    
+    <!-- Initialize -->
+    <script>
+        window.addEventListener('load', function() {
+            // Initialize site
+            if (typeof CarGames !== 'undefined') {
+                CarGames.init();
+            }
+            
+            // Preload images
+            const preloadImages = [
+                'assets/images/featured-game.jpg',
+                'assets/images/logo.png'
+            ];
+            
+            preloadImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        });
+    </script>
+</body>
+</html>
